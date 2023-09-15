@@ -35,12 +35,6 @@ nav a {
     text-decoration: none;
 }
 
-.bottom-container {
-    margin-top: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    display: flex;
-}
 
 .main {
     display: flex;
@@ -82,4 +76,24 @@ footer {
     background-color: #415a77;
     display: flex;
     justify-content: center;
+}
+
+.bottom-container {
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+    display: flex;
+}
+
+@media screen and (max-width: 415px) {
+    .bottom-container {
+        flex-wrap: wrap;
+    }
+    .main, .side {
+        max-width: 100%;
+        margin: 0;
+    }
+    footer {
+        display: none;
+    }
 }
